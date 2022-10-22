@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang ="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Tbibi.tn:Tous ce qui cocerne votre santé</title>
+    <meta name="description" content="c'est l'endroit ou vous étes  mis en contact avec plusieurs médecins professionnels des plusieurs specialité de differents régions .Trouvez tous ce qui concerne votre santé">
+    <meta name="keywords" content="médecin,santé,covid-19,consultation,rendez-vous en ligne,pharmacie,cabinet,vétérinaire">
+    <link rel="stylesheet" href="../css/styleVétérinaire.css">
+</head>
+<body>
+    <div class="head">
+        <table>
+            <tr>
+                <td>
+                    <img  class="logo" src="../images/logo.png" alt ="Logo tbib.tn" name="Logo tbibi.tn">
+                </td>
+                <td>
+                    <ul class="menu">
+                        <li><a href ="Aceuil.html">Aceuil</a></li>
+		                <li><a href ="Espace patient.html"/>Espace patient</a></li>
+		                <li><a href ="Espace médecin.html"/>Espace médecin</a></li>
+		                <li><a href ="Pharmacie.html"/>Pharmacie</a></li>
+		                <li><a  href ="#"/>vétérinaire</a></li>
+					</ul>
+                </td>
+                <td>
+                    <form   name="Rechercher" method="post" action="RechercheProjet.php">
+		                <div class=" rechercher"><label for="text composé"></label>
+		                    <input type="text" name="text composé" id="text composé" placeholder="Search"/>
+		                </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+<h1>Vétérinaire</h1>
+<table>
+  <tr>
+    <td>
+	<form name="Vétérinaire" method="post" action="Vétérinaire.php" >
+	    <fieldset>
+	        <div class="search">
+		        <input type="text" name="NomVeto" id="NomVeto" placeholder="Nom du Vétérinaire"/>
+		    </div>
+	        <div class="ville">
+		        <label for="ville">Ville</label>
+                <select name="ville" id="ville">
+                    <option value="Tunis" selected>Tunis</option>
+                    <option value="Ariana">Ariana</option>
+                    <option value="Béja">Béja </option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Bizerte">Bizerte </option>
+                    <option value="Gabès">Gabès </option>
+                    <option value="Gafsa">Gafsa </option>
+                    <option value="Jendouba">Jendouba </option>
+                    <option value="Kairouan">Kairouan </option>
+                    <option value="Kasserine">Kasserine </option>
+                    <option value="Kébili">Kébili </option>
+                    <option value="Kef">Kef</option>
+                    <option value="Mahdia">Mahdia </option>
+                    <option value="Manouba">Manouba </option>
+                    <option value="Médenine">Médenine </option>
+                    <option value="Monastir">Monastir </option>
+                    <option value="Nabeul">Nabeul </option>
+                    <option value="Sfax">Sfax </option>
+                    <option value="Sidi Bouzid">Sidi Bouzid </option>
+                    <option value="Siliana">Siliana</option>
+                    <option value="Sousse">Sousse </option>
+                    <option value="Tataouine">Tataouine</option>
+                    <option value="Tozeur">Tozeur </option>
+                    <option value="Zaghouan">Zaghouan </option>
+		        </select>
+            </div>    
+			<div>
+			    <input type="checkbox" name="option" value="Domicile" id="Domicile" /> 
+			    <label for="Domicile">Visite à domicile</label>
+            </div>
+			<div>
+				<input type="checkbox" name="option" value="CNAM" id="CNAM" /> 
+				<label for="CNAM">Conventionné avec la CNAM</label>
+            </div>
+			<div class="submit">
+		        <button type="submit" name="Chercher" >Search</button>
+		        <button type="reset" name="Annuler" >Annuler</button>
+		    </div>					    
+	    </fieldset>
+	</form>
+	</td>
+	<td>
+	<div>
+	  <img src="../images/veto.jpeg" alt="veto" class="veto">
+	</div>
+	</td>
+  </tr>
+</table>
+ <div class="vet">
+	    <p>
+            <h4> <img src ="../images/nour.png" alt ="nour"><strong>  Dr,Sehli Nour</strong></br> Vétérinaire </br>docteur en médecine vétérinaire spécialiste Animaux de compagnie.
+            <button type="submit" name="Prendre RDV" class="RDV" onclick="alert('choisir une date du calendrier')">Prendre un RDV</button>
+		</p>
+    </div>
+    <div class="vet" >
+	    <p>
+            <h4><img src="../images/yoldez.png" alt=" yoldez"><strong>  Dr,Najar Yoldez</strong></br> Vétérinaire </br>Médecin vétérinaire spécialiste en médecine et chirurgie des animaux de compagnie.
+            <button type="submit" name="Prendre RDV" class="RDV"onclick="alert('choisir une date du calendrier')" >Prendre un RDV</button>
+        </p>
+    </div>
+    <div class="vet">
+	    <p>
+            <h4><img src ="../images/farah.png" alt =" farah"><strong> Dr,Belhaj Farah</strong></br> Vétérinaire</br>docteur en médecine vétérinaire diplômé de l’Ecole nationale de médecine vétérinaire de Sidi Thabet
+            <button type="submit" name="Prendre RDV" class="RDV"onclick="alert('choisir une date du calendrier')" >Prendre un RDV</button>
+        </p>
+    </div>
+<footer>
+<h1>Contacter-nous</h1>
+<p>
+   <blockquote>
+        <blockquote>
+            <h4><img src="../images/email.png" alt=" email">Tbibi.tn@gmail.com</h4>
+            <h4><img src="../images/tel.png" alt="telephone">12345678</h4>
+		</blockquote>
+    </blockquote>
+</p>
+<div class="RS">
+<img src="../images/facebook.png" alt=" logo facebook">
+<img src="../images/insta.png" alt=" logo instagram">
+<img src="../images/linkedin.png" alt=" logo linkedin">
+<img src="../images/twiitter.png" alt=" logo twitter">
+</div>
+<h4>&copy2021.Tous les droits réservés Tbibi.tn </h4>
+</html>

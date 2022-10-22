@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang ="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Tbibi.tn:Tous ce qui cocerne votre santé</title>
+    <meta name="description" content="c'est l'endroit ou vous étes  mis en contact avec plusieurs médecins professionnels des plusieurs specialité de differents régions .Trouvez tous ce qui concerne votre santé">
+    <meta name="keywords" content="médecin,santé,covid-19,consultation,rendez-vous en ligne,pharmacie,cabinet,vétérinaire">
+    <link rel="stylesheet" href="../css/styleEspacePatient.css">
+	<script src="../JS/controle.js"></script
+</head>
+<body>
+    <div class="head">
+        <table>
+            <tr>
+                <td>
+                    <img  class="logo" src="../images/logo.png" alt ="Logo tbib.tn" name="Logo tbibi.tn">
+                </td>
+                <td>
+				<nav>
+                    <ul class="menu">
+                        <li><a href ="Aceuil.html">Aceuil</a></li>
+		                <li><a href ="#"/>Espace patient</a></li>
+		                <li><a href ="Espace médecin.html"/>Espace médecin</a></li>
+		                <li><a href ="Pharmacie.html"/>Pharmacie</a></li>
+		                <li><a  href ="vétérinaire.html"/>vétérinaire</a></li>
+					</ul>
+				</nav>
+                </td>
+                <td>
+                    <form   name="Rechercher" method="post" action="RechercheProjet.php">
+		                <div class=" rechercher"><label for="text composé"></label>
+		                    <input type="text" name="text composé" id="text composé" placeholder="Search"/>
+		                </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+<h1>Espace patient</h1>
+<h2>Prendre un RDV en ligne</h2>
+<form name="PrendeRDV" method="post"  action="../php/prendreRDV"onsubmit="return agePatient(document.prendreRDV.age)">
+    <fieldset>
+		<div class="search">
+		    <input type="text" name="NomPro" id="NomPro" placeholder="Nom de professionnel de santé"/>
+		</div>
+        <div class="ville">
+		<label for="ville">Ville</label>
+        <select name="ville" id="ville">
+            <option value="Tunis" selected>Tunis</option>
+            <option value="Ariana">Ariana</option>
+            <option value="Béja">Béja </option>
+            <option value="Ben Arous">Ben Arous</option>
+            <option value="Bizerte">Bizerte </option>
+            <option value="Gabès">Gabès </option>
+            <option value="Gafsa">Gafsa </option>
+            <option value="Jendouba">Jendouba </option>
+            <option value="Kairouan">Kairouan </option>
+            <option value="Kasserine">Kasserine </option>
+            <option value="Kébili">Kébili </option>
+            <option value="Kef">Kef</option>
+            <option value="Mahdia">Mahdia </option>
+            <option value="Manouba">Manouba </option>
+            <option value="Médenine">Médenine </option>
+            <option value="Monastir">Monastir </option>
+            <option value="Nabeul">Nabeul </option>
+            <option value="Sfax">Sfax </option>
+            <option value="Sidi Bouzid">Sidi Bouzid </option>
+            <option value="Siliana">Siliana</option>
+            <option value="Sousse">Sousse </option>
+            <option value="Tataouine">Tataouine</option>
+            <option value="Tozeur">Tozeur </option>
+            <option value="Zaghouan">Zaghouan </option>
+		</select>
+        </div>
+        <div class="spécialité">
+		<label for="spécialité">Spécialité</label>
+        <select name="Spécialité" id="spécialité">
+            <option value="allergologie" >allergologie</option>
+            <option value="anesthésiologie">anesthésiologie</option>
+            <option value="andrologie">andrologie</option>
+            <option value="cardiologie">cardiologie</option>
+            <optgroup label="chirurgie">
+                <option value=" chirurgie cardiaque"> chirurgie cardiaque </option>
+                <option value="chirurgie esthétique">chirurgie esthétique </option>
+                <option value="chirurgie générale">chirurgie générale </option>
+                <option value="chirurgie pédiatrique">chirurgie pédiatrique </option>
+                <option value=" chirurgie thoracique"> chirurgie thoracique </option>
+                <option value="chirurgie vasculaire">chirurgie vasculaire </option>
+                <option value="neurochirurgie">neurochirurgie </option>
+            </optgroup>
+            <option value="dermatologie">dermatologie</option>
+            <option value="endocrinologie">endocrinologie</option>
+            <option value="gastro-entérologie">gastro-entérologie </option>
+            <option value="gériatrie">gériatrie </option>
+            <option value="gynécologie">gynécologie </option>
+            <option value="hématologie">hématologie </option>
+            <option value="hépatologie">hépatologie </option>
+            <option value="infectiologie">infectiologie </option>
+            <option value="médecine aiguë">médecine aiguë</option>
+            <option value="médecine générale">médecine générale</option>
+            <option value="médecine interne">médecine interne </option>
+            <option value="médecine nucléaire">médecine nucléaire </option>
+            <option value="médecine palliative">médecine palliative</option>
+            <option value="médecine physique">médecine physique </option>
+            <option value="médecine préventive">médecine préventive </option>
+            <option value="néonatologie">néonatologie </option>
+            <option value="néphrologie">néphrologie </option>
+            <option value="neurologie">neurologie</option>
+            <option value="odontologie">odontologie </option>
+            <option value="oncologie">oncologie</option>
+            <option value="obstétrique">obstétrique </option>
+            <option value="ophtalmologie">ophtalmologie </option>
+            <option value="orthopédie">orthopédie </option>
+            <option value="pédiatrie" selected>pédiatrie </option>
+            <option value="pneumologie">pneumologie </option>
+            <option value="psychiatrie">psychiatrie	 </option>
+            <option value="radiologie"> radiologie</option>
+            <option value="radiothérapie">radiothérapie </option>
+            <option value="rhumatologie">rhumatologie</option>
+            <option value="urologie">urologie </option>
+		</select>
+        </div>
+		<div class="submit">
+		    <button type="submit" name="Chercher un docteur" >Search</button>
+		    <button type="reset" name="Annuler" >Annuler</button>
+		</div>
+    </fieldset>
+</form>
+<h2>Selectionner un docteur</h2>
+    <div class="dr">
+	    <p>
+            <h4> <img src ="../images/nour.png" alt ="nour"><strong>  Dr,Sehli Nour</strong></br> Pédiatre </br>Kinésithérapeute - physiothérapeute Stimulation et traitement de toute pathologie ostéo articulaire et musculaire via la tecar Humantecar 
+            <button type="submit" name="Prendre RDV" class="RDV" onclick="alert('choisir une date du calendrier')">Prendre un RDV</button>
+		</p>
+    </div>
+    <div class="dr" >
+	    <p>
+            <h4><img src="../images/yoldez.png" alt=" yoldez"><strong>  Dr,Najar Yoldez</strong></br> Kinésithérapeute </br>Spécialiste en pédiatrie et en néonatologie CEC en urgences et réanimation pédiatrique CEC en cardiologie pédiatrique
+            <button type="submit" name="Prendre RDV" class="RDV"onclick="alert('choisir une date du calendrier')" >Prendre un RDV</button>
+        </p>
+    </div>
+    <div class="dr">
+	    <p>
+            <h4><img src ="../images/farah.png" alt =" farah"><strong> Dr,Belhaj Farah</strong></br> Dérmatologue</br>Spécialiste En Dermatologie Maladies de la peau, des ongles et des cheveux, Maladies Sexuellement Transmissibles, Médecine Esthétique-LASER
+            <button type="submit" name="Prendre RDV" class="RDV"onclick="alert('choisir une date du calendrier')" >Prendre un RDV</button>
+        </p>
+    </div>
+<h2>Formulaire à remplir</h2>
+<form>
+    <fieldset>
+        <div>
+            <label for="Nom"> Nom</label>
+            <input type="text" name="Nom" id="Nom" />
+        </div>
+        <div>
+            <label for="Prenom"> Prénom</label>
+            <input type="text" name="Prenom" id="Prenom" />
+        </div>
+        <div>
+            <label for="Taille">Taille(cm)</label>
+            <input type="text" name="taille" id="Taille" />
+        </div>
+        <div>
+            <label for="Poid">Poid(kg)</label>
+            <input type="text" name="poid" id="Poid" />
+        </div>
+        <div>
+            <label for="Age">Age</label>
+            <input type="text" name="age" id="Age" pattern[0-9] />
+        </div>
+        <div>
+            <label for="Email">Adresse email</label>
+            <input type="email" name="email" id="Email" />
+        </div>
+        <div>
+            <label for="Tel">Tel</label>
+            <input type="tel" name="tel" id="Tel" />
+        </div>
+        <div>
+            <label for="genre">Genre</label>
+                <div>
+                    <input type="radio" name="sexe" value="F" id="Femme" /> 
+                    <label for="Femme">Femme</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexe" value="H" id="Homme"  />
+                    <label for="Homme">Homme</label>
+                </div>
+        </div>
+        <div>
+            <label for="Etat">Déscription bréve de son etat sanitaire</label><br />
+            <textarea name="Etat" id="Etat" rows="4" cols="50" ></textarea>
+        </div>
+        <div>
+            <button type="submit" name="Envoyer" >Envoyer</button>
+            <button type="reset" name="Annuler" >Annuler</button>
+        </div>
+    </fieldset>
+</form>
+<footer>
+<h1>Contacter-nous</h1>
+<p>
+   <blockquote>
+        <blockquote>
+            <h4><img src="../images/email.png" alt=" email">Tbibi.tn@gmail.com</h4>
+            <h4><img src="../images/tel.png" alt="telephone">12345678</h4>
+		</blockquote>
+    </blockquote>
+</p>
+<div class="RS">
+<img src="../images/facebook.png" alt=" logo facebook">
+<img src="../images/insta.png" alt=" logo instagram">
+<img src="../images/linkedin.png" alt=" logo linkedin">
+<img src="../images/twiitter.png" alt=" logo twitter">
+</div>
+<h4>&copy2021.Tous les droits réservés Tbibi.tn</h4>
+</html>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body{
+font-family: 'Architects Daughter', cursive;}
+.menu li {
+display: inline;
+list-style-type:none;
+color:#042039;
+margin:50px}
+.head,footer{
+background-color:#c6e9f6;
+color:#042039;}
+a:link{
+text-decoration:none;}
+strong,a{
+color:#51ade5}
+#NomPro{
+	width:15%;
+}
+.search, .ville,.spécialité , .submit{
+display:inline}
+h1,h2{
+color:#51ade5;}
+label,h4{
+color:#042039;}
+.dr1,.dr2,.dr3{
+background-color:#edf0f3;}
+button{
+	padding:5px;
+	height:30px;
+	background-color: #002D40;
+	color:white;
+	border:inset 2px grey;
+	border-radius:5px;
+	margin-left:50px;
+}
+.RS img{
+    width: 20px;
+}
+.RS{
+    position: absolute;
+    right: 10px;
+}
+.veto{
+padding-left:250%;
+width:120%;
+height:100%;}
+.vet{
+background-color:#edf0f3;}
+.RDV{
+margin-left:90%;}
